@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento Torugo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estacionamento Torugo</h1>
+        <p>Cadastre a placa do carro e Aproveite.</p>
+
+        <div class="form">
+            <label for="placa">Incira Placa do carro:</label>
+            <input type="text" id="placa" placeholder="Placa do carro (Ex: ABC-1234)">
+            <br>
+            <label for="entrada">Incira a Hora de entrada:</label>
+            <input type="time" id="entrada">
+            <br>
+            <label for="entrada">Incira a Hora de saída:</label>
+            <input type="time" id="saida" placeholder="Opcional: Hora real de saída">
+            <button onclick="registrarCarro()">Registrar Carro</button>
+        </div>
+
+        <h2>Carros Estacionados</h2>
+        <div id="lista-carros"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
